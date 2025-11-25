@@ -1,4 +1,4 @@
-# API_response_error
+# create exception for API_response_error
 
 This script demonstrates how to create and use a custom exception to handle API-related errors in a clean and structured way. The class APIResponseError is defined to represent any failure that occurs while requesting or processing API data. The fetch_data() function sends a GET request with a timeout of three seconds and checks for common issues. If the API returns a non-200 status code, it raises the custom exception. It also attempts to parse the response as JSON and raises another custom exception if the data is invalid. Additional exceptions like timeouts or unreachable hosts are also converted into APIResponseError messages for consistency.
 
